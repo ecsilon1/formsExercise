@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/forms.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Detalii utilizator</legend>
+        <form action="https://formspree.io/f/mdoyyqgn" method="post">
+            <label for="myfile">Importa imagine:</label>
+            <input type="file" id="myFile" name="filename">
+            <br>
+            <label for="firstName">Nume:</label>
+            <input type="text" name="firstName" placeholder="Introdu numele" id="firstName" pattern="[A-Za-z]+" required
+                title="only use letters">
+            <br>
+            <label for="familyName">Prenume:</label>
+            <input type="text" name="lastName" placeholder="Introdu numele" id="familyName" pattern="[A-Za-z]+" required
+                title="only use letters" required>
+            <br>
+            <span>Sex:</span>
+            <br>
+
+            <input type="radio" value="Male" id="male" name="sex" required>
+            <label for="male">Masculin</label>
+            <br>
+
+            <input type="radio" value="Female" id="Female" name="sex">
+            <label for="Female">Feminin</label>
+
+            <br>
+            <label for="date">Data nasterii:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+
+            <label for="cnp">CNP:</label>
+            <input type="text" id="cnp" name="cnp" pattern="[0-9]+" title="please insert only numbers" minlength="13"
+                maxlength="13" required>
+            <br>
+          
+            <input type="submit" value="Next">
+
+            <input type="reset">
+    </fieldset>
+    <!-- Campul al doilea -->
+
+    <fieldset id="secondField">
+        <legend>Detalii contact</legend>
+        <label for="telefon">Numar telefon:</label>
+        <input type="text" id="telefon" name="telefon" pattern="[0-9]+" title="please insert only numbers"
+            minlength="10" maxlength="10" required>
+
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="judet" required>Judet:</label>
+        <select name="judet" id="judet" required>
+            <option value="">-</option>
+            <option value="ARGES">ARGES</option>
+            <option value="BUCURESTI">BUCURESTI</option>
+            <option value="ARAD">BRASOV</option>
+
+        </select>
+        <br>
+        <label for="oras">Oras:</label>
+        <select name="oras" id="oras" required>
+            <option value="">-</option>
+            <option value="CAMPULUNG">CAMPULUNG</option>
+            <option value="PITESTI">PITESTI</option>
+            <option value="Covasna">Covasna</option>
+        </select>
+        <br>
+
+        <label for="description">Adresa:</label>
+        <textarea name="description" id="description" cols="30" rows="5" required
+            placeholder="Introduceti adresa"></textarea>
+        <br>
+
+        <label for="cod-postal">Cod Postal:</label>
+        <input type="text" pattern="[0-9]+" required>
+        <br>
+        <input type="submit" value="Next">
+        <input type="reset">
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Credentiale</legend>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required
+                >
+            <br>
+
+            <label for="pwdInput">Confirm password:</label>
+            <input type="password" id="pwdInput">
+            <br>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Doresc sa ma abonez la newsletter</label>
+
+            <br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Sunt de acord cu <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Termeni &
+                    Conditii</a>
+                </label>
+
+            <br>
+            <input type="submit" value="Inregistrare">
+           
+    </fieldset>
+
+
+
+    </form>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

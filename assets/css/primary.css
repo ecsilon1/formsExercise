@@ -1,0 +1,74 @@
+/* 1 */
+div.abc p{
+    background-color:yellow
+}
+
+/* 2 */
+
+
+div>p{
+    font-weight: bold;
+}
+
+/* 3 */
+
+p~p{
+    text-decoration: underline;
+}
+
+
+/* 4 */
+
+div.abc ~div{
+    background-color: lightblue;
+}
+
+
+/* 5 */
+a:link {
+    color: blue;
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    color: blanchedalmond;
+}
+a:active{
+    color: black;
+} 
+
+
+/* 6 */
+
+div.first-child :first-child{
+    font-size: 24px;
+}
+
+/* 7 */
+
+tbody tr:nth-child(even){
+    background-color: lightblue;
+}
+
+tbody tr:nth-child(odd){
+    background-color: cornflowerblue;
+}
+
+thead tr:first-child{
+    background-color: darkcyan;
+}
+
+/* 8 */
+
+input[type="date"]:focus{
+    background-color: grey;
+}
+
+/* 9 idk if this is it */ 
+
+input[type="text"]:focus{
+ position: relative;
+right: -25px;
+border: 3px solid blue;
+}
